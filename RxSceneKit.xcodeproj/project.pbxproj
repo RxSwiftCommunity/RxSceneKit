@@ -12,6 +12,9 @@
 		94E65AC020DD723300E49D1B /* RxSceneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E65AB220DD723200E49D1B /* RxSceneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94E65AE220DD745800E49D1B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE020DD745700E49D1B /* RxCocoa.framework */; };
 		94E65AE320DD745800E49D1B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE120DD745800E49D1B /* RxSwift.framework */; };
+		94E65B0820DE691500E49D1B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0720DE691500E49D1B /* File.swift */; };
+		94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */; };
+		94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		94E65ACC20DD735000E49D1B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		94E65AE020DD745700E49D1B /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		94E65AE120DD745800E49D1B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		94E65B0720DE691500E49D1B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSCNSceneRendererDelegateProxy.swift; sourceTree = "<group>"; };
+		94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNView+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 		94E65AB120DD723200E49D1B /* RxSceneKit */ = {
 			isa = PBXGroup;
 			children = (
+				94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */,
+				94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */,
+				94E65B0720DE691500E49D1B /* File.swift */,
 				94E65AB220DD723200E49D1B /* RxSceneKit.h */,
 				94E65AB320DD723200E49D1B /* Info.plist */,
 			);
@@ -174,6 +183,7 @@
 				TargetAttributes = {
 					94E65AAE20DD723200E49D1B = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					94E65AB720DD723300E49D1B = {
 						CreatedOnToolsVersion = 9.4;
@@ -253,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */,
+				94E65B0820DE691500E49D1B /* File.swift in Sources */,
+				94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +411,7 @@
 		94E65AC420DD723300E49D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -418,6 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxSceneKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +441,7 @@
 		94E65AC520DD723300E49D1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -454,6 +470,7 @@
 		94E65AC720DD723300E49D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RxSceneKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +488,7 @@
 		94E65AC820DD723300E49D1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RxSceneKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
