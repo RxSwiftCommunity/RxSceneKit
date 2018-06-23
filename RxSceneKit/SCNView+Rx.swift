@@ -29,18 +29,24 @@ extension Reactive where Base: SCNView {
             return RxSCNSceneRendererDelegateProxy.installForwardDelegate(delegate, retainDelegate: false, onProxyForObject: self.base)
     }
     
-    // MARK:- SKSceneDelegate
+    // MARK:- SCNSceneRendererDelegate
     
-    // Reactive wrapper for delegate method `session(_ session: ARSession, didUpdate frame: ARFrame)`
-    //    public var didUpdateFrame: ControlEvent<ARFrame> {
-    //        let source = delegate
-    //            .methodInvoked(#selector(ARSessionDelegate.session(_:didUpdate:) as ((ARSessionDelegate) -> (ARSession, ARFrame) -> Void)?))
-    //            .map { value -> ARFrame in
-    //                return try castOrThrow(ARFrame.self, value[1] as AnyObject)
-    //        }
-    //        return ControlEvent(events: source)
-    //    }
-    //
+//    optional public func renderer(_ renderer: SCNSceneRenderer, didApplyAnimationsAtTime time: TimeInterval)
+//    optional public func renderer(_ renderer: SCNSceneRenderer, didSimulatePhysicsAtTime time: TimeInterval)
+//    optional public func renderer(_ renderer: SCNSceneRenderer, didApplyConstraintsAtTime time: TimeInterval)
+//    optional public func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval)
+//    optional public func renderer(_ renderer: SCNSceneRenderer, didRenderScene scene: SCNScene, atTime time: TimeInterval)
+    
+    // Reactive wrapper for delegate method `renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval)`
+    public var updateAtTime: ControlEvent<TimeInterval> {
+        let source = delegate
+            .methodInvoked(#selector(SCNSceneRendererDelegate.renderer(_:updateAtTime:)))
+            .map { value -> TimeInterval in
+                return try castOrThrow(TimeInterval.self, value[1] as AnyObject)
+        }
+        return ControlEvent(events: source)
+    }
+    
     
     
     
