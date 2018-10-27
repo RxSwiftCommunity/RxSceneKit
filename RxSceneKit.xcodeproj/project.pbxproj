@@ -12,9 +12,12 @@
 		94E65AC020DD723300E49D1B /* RxSceneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E65AB220DD723200E49D1B /* RxSceneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94E65AE220DD745800E49D1B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE020DD745700E49D1B /* RxCocoa.framework */; };
 		94E65AE320DD745800E49D1B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE120DD745800E49D1B /* RxSwift.framework */; };
-		94E65B0820DE691500E49D1B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0720DE691500E49D1B /* File.swift */; };
 		94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */; };
 		94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */; };
+		94F130162184FEC000EC279A /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130112184FEBF00EC279A /* Selector.swift */; };
+		94F130172184FEC000EC279A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130122184FEBF00EC279A /* Helper.swift */; };
+		94F130192184FEC000EC279A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130142184FEC000EC279A /* Event.swift */; };
+		94F1301A2184FEC000EC279A /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130152184FEC000EC279A /* Mapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +43,12 @@
 		94E65ACC20DD735000E49D1B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		94E65AE020DD745700E49D1B /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		94E65AE120DD745800E49D1B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		94E65B0720DE691500E49D1B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSCNSceneRendererDelegateProxy.swift; sourceTree = "<group>"; };
 		94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNView+Rx.swift"; sourceTree = "<group>"; };
+		94F130112184FEBF00EC279A /* Selector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selector.swift; sourceTree = "<group>"; };
+		94F130122184FEBF00EC279A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		94F130142184FEC000EC279A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		94F130152184FEC000EC279A /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 				94E65ACB20DD735000E49D1B /* Cartfile.resolved */,
 				94E65ACC20DD735000E49D1B /* LICENSE */,
 				94E65AC920DD734F00E49D1B /* README.md */,
+				94F130102184FD2100EC279A /* Proxy */,
+				94F1300F2184FD1400EC279A /* Utility */,
 				94E65AB120DD723200E49D1B /* RxSceneKit */,
 				94E65ABC20DD723300E49D1B /* RxSceneKitTests */,
 				94E65AB020DD723200E49D1B /* Products */,
@@ -92,9 +100,7 @@
 		94E65AB120DD723200E49D1B /* RxSceneKit */ = {
 			isa = PBXGroup;
 			children = (
-				94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */,
 				94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */,
-				94E65B0720DE691500E49D1B /* File.swift */,
 				94E65AB220DD723200E49D1B /* RxSceneKit.h */,
 				94E65AB320DD723200E49D1B /* Info.plist */,
 			);
@@ -117,6 +123,25 @@
 				94E65AE120DD745800E49D1B /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94F1300F2184FD1400EC279A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				94F130142184FEC000EC279A /* Event.swift */,
+				94F130122184FEBF00EC279A /* Helper.swift */,
+				94F130152184FEC000EC279A /* Mapper.swift */,
+				94F130112184FEBF00EC279A /* Selector.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		94F130102184FD2100EC279A /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */,
-				94E65B0820DE691500E49D1B /* File.swift in Sources */,
+				94F130172184FEC000EC279A /* Helper.swift in Sources */,
+				94F1301A2184FEC000EC279A /* Mapper.swift in Sources */,
+				94F130162184FEC000EC279A /* Selector.swift in Sources */,
+				94F130192184FEC000EC279A /* Event.swift in Sources */,
 				94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

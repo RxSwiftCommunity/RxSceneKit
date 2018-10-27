@@ -7,10 +7,59 @@
 //
 
 import SceneKit
+#if !RX_NO_MODULE
 import RxSwift
 import RxCocoa
+#endif
 
 extension Reactive where Base: SCNView {
+    
+    // MARK: - SCNSceneRendererDelegate
+    
+    public var updateAtTime: ControlEvent<EventTime> {
+        let source: Observable<EventTime> = delegate
+            .methodInvoked(.updateAtTime)
+            .map(toEventTime)
+        return ControlEvent(events: source)
+    }
+    
+    public var didApplyAnimationsAtTime: ControlEvent<EventTime> {
+        let source: Observable<EventTime> = delegate
+            .methodInvoked(.didApplyAnimationsAtTime)
+            .map(toEventTime)
+        return ControlEvent(events: source)
+    }
+    
+    public var didSimulatePhysicsAtTime: ControlEvent<EventTime> {
+        let source: Observable<EventTime> = delegate
+            .methodInvoked(.didSimulatePhysicsAtTime)
+            .map(toEventTime)
+        return ControlEvent(events: source)
+    }
+    
+    public var didApplyConstraintsAtTime: ControlEvent<EventTime> {
+        let source: Observable<EventTime> = delegate
+            .methodInvoked(.didApplyConstraintsAtTime)
+            .map(toEventTime)
+        return ControlEvent(events: source)
+    }
+    
+    public var willRenderSceneAtTime: ControlEvent<EventRender> {
+        let source: Observable<EventRender> = delegate
+            .methodInvoked(.willRenderSceneAtTime)
+            .map(toEventRender)
+        return ControlEvent(events: source)
+    }
+    
+    public var didRenderSceneAtTime: ControlEvent<EventRender> {
+        let source: Observable<EventRender> = delegate
+            .methodInvoked(.didRenderSceneAtTime)
+            .map(toEventRender)
+        return ControlEvent(events: source)
+    }
+    
+    // MARK: -
+    
     /// Reactive wrapper for `delegate`.
     /// For more information take a look at `DelegateProxyType` protocol documentation.
     public var delegate: DelegateProxy<SCNView, SCNSceneRendererDelegate> {
@@ -29,25 +78,5 @@ extension Reactive where Base: SCNView {
             return RxSCNSceneRendererDelegateProxy.installForwardDelegate(delegate, retainDelegate: false, onProxyForObject: self.base)
     }
     
-    // MARK:- SCNSceneRendererDelegate
-    
-//    optional public func renderer(_ renderer: SCNSceneRenderer, didApplyAnimationsAtTime time: TimeInterval)
-//    optional public func renderer(_ renderer: SCNSceneRenderer, didSimulatePhysicsAtTime time: TimeInterval)
-//    optional public func renderer(_ renderer: SCNSceneRenderer, didApplyConstraintsAtTime time: TimeInterval)
-//    optional public func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval)
-//    optional public func renderer(_ renderer: SCNSceneRenderer, didRenderScene scene: SCNScene, atTime time: TimeInterval)
-    
-    // Reactive wrapper for delegate method `renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval)`
-    public var updateAtTime: ControlEvent<TimeInterval> {
-        let source = delegate
-            .methodInvoked(#selector(SCNSceneRendererDelegate.renderer(_:updateAtTime:)))
-            .map { value -> TimeInterval in
-                return try castOrThrow(TimeInterval.self, value[1] as AnyObject)
-        }
-        return ControlEvent(events: source)
-    }
-    
-    
-    
-    
 }
+
