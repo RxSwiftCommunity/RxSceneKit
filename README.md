@@ -6,18 +6,18 @@ Basic usage.
 ```swift
 
 scnView.
-.rx
-.updateAtTime
-.subscribe { event in
-switch event {
-case .next(let updateAtTime):
-// TODO: ...
-break
-default:
-break
-}
-}
-.disposed(by: disposeBag)
+    .rx
+    .updateAtTime
+    .subscribe { event in
+        switch event {
+        case .next(let updateAtTime):
+            // TODO: ...
+            break
+        default:
+            break
+        }
+    }
+    .disposed(by: disposeBag)
 ```
 
 Carthage setup.
