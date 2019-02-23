@@ -37,7 +37,7 @@ physicsWorld
 Carthage setup.
 
 ```
-github "maxvol/RxSceneKit" ~> 0.1.0
+github "maxvol/RxSceneKit" ~> 0.1.1
 
 ```
 
