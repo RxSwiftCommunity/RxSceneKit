@@ -7,40 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		941179F622211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */; };
-		941179F822211EA200852B53 /* SCNPhysicsWorld+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */; };
-		94E65AB920DD723300E49D1B /* RxSceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AAF20DD723200E49D1B /* RxSceneKit.framework */; };
-		94E65ABE20DD723300E49D1B /* RxSceneKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65ABD20DD723300E49D1B /* RxSceneKitTests.swift */; };
-		94E65AC020DD723300E49D1B /* RxSceneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E65AB220DD723200E49D1B /* RxSceneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94E65AE220DD745800E49D1B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE020DD745700E49D1B /* RxCocoa.framework */; };
-		94E65AE320DD745800E49D1B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE120DD745800E49D1B /* RxSwift.framework */; };
-		94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */; };
-		94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */; };
-		94F130162184FEC000EC279A /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130112184FEBF00EC279A /* Selector.swift */; };
-		94F130172184FEC000EC279A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130122184FEBF00EC279A /* Helper.swift */; };
-		94F130192184FEC000EC279A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130142184FEC000EC279A /* Event.swift */; };
-		94F1301A2184FEC000EC279A /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130152184FEC000EC279A /* Mapper.swift */; };
+		94117A552221267F00852B53 /* RxSceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94117A4C2221267E00852B53 /* RxSceneKit.framework */; };
+		94117A5A2221267F00852B53 /* iOS_RxSceneKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94117A592221267F00852B53 /* iOS_RxSceneKitTests.swift */; };
+		94117A5C2221267F00852B53 /* iOS_RxSceneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94117A4E2221267E00852B53 /* iOS_RxSceneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94117A71222126A100852B53 /* RxSceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94117A68222126A100852B53 /* RxSceneKit.framework */; };
+		94117A76222126A100852B53 /* macOS_RxSceneKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94117A75222126A100852B53 /* macOS_RxSceneKitTests.swift */; };
+		94117A78222126A100852B53 /* macOS_RxSceneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94117A6A222126A100852B53 /* macOS_RxSceneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94117A7F2221273100852B53 /* RxSCNSceneRendererDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */; };
+		94117A802221273100852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */; };
+		94117A812221273100852B53 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130142184FEC000EC279A /* Event.swift */; };
+		94117A822221273100852B53 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130122184FEBF00EC279A /* Helper.swift */; };
+		94117A832221273100852B53 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130152184FEC000EC279A /* Mapper.swift */; };
+		94117A842221273100852B53 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130112184FEBF00EC279A /* Selector.swift */; };
+		94117A852221273100852B53 /* SCNPhysicsWorld+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */; };
+		94117A862221273100852B53 /* SCNView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */; };
+		94117A872221273500852B53 /* RxSCNSceneRendererDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */; };
+		94117A882221273500852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */; };
+		94117A892221273500852B53 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130142184FEC000EC279A /* Event.swift */; };
+		94117A8A2221273500852B53 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130122184FEBF00EC279A /* Helper.swift */; };
+		94117A8B2221273500852B53 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130152184FEC000EC279A /* Mapper.swift */; };
+		94117A8C2221273500852B53 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F130112184FEBF00EC279A /* Selector.swift */; };
+		94117A8D2221273500852B53 /* SCNPhysicsWorld+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */; };
+		94117A8E2221273500852B53 /* SCNView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */; };
+		94117A8F222128E500852B53 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE020DD745700E49D1B /* RxCocoa.framework */; };
+		94117A90222128E500852B53 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AE120DD745800E49D1B /* RxSwift.framework */; };
+		94117A93222128FF00852B53 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94117A91222128FE00852B53 /* RxSwift.framework */; };
+		94117A94222128FF00852B53 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94117A92222128FE00852B53 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		94E65ABA20DD723300E49D1B /* PBXContainerItemProxy */ = {
+		94117A562221267F00852B53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 94E65AA620DD723200E49D1B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94E65AAE20DD723200E49D1B;
-			remoteInfo = RxSceneKit;
+			remoteGlobalIDString = 94117A4B2221267E00852B53;
+			remoteInfo = iOS_RxSceneKit;
+		};
+		94117A72222126A100852B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E65AA620DD723200E49D1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94117A67222126A100852B53;
+			remoteInfo = macOS_RxSceneKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSCNPhysicsContactDelegateProxy.swift; sourceTree = "<group>"; };
 		941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsWorld+Rx.swift"; sourceTree = "<group>"; };
-		94E65AAF20DD723200E49D1B /* RxSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E65AB220DD723200E49D1B /* RxSceneKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSceneKit.h; sourceTree = "<group>"; };
-		94E65AB320DD723200E49D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94E65AB820DD723300E49D1B /* RxSceneKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSceneKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E65ABD20DD723300E49D1B /* RxSceneKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSceneKitTests.swift; sourceTree = "<group>"; };
-		94E65ABF20DD723300E49D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94117A4C2221267E00852B53 /* RxSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94117A4E2221267E00852B53 /* iOS_RxSceneKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_RxSceneKit.h; sourceTree = "<group>"; };
+		94117A4F2221267E00852B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94117A542221267F00852B53 /* iOS_RxSceneKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_RxSceneKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94117A592221267F00852B53 /* iOS_RxSceneKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_RxSceneKitTests.swift; sourceTree = "<group>"; };
+		94117A5B2221267F00852B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94117A68222126A100852B53 /* RxSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94117A6A222126A100852B53 /* macOS_RxSceneKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macOS_RxSceneKit.h; sourceTree = "<group>"; };
+		94117A6B222126A100852B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94117A70222126A100852B53 /* macOS_RxSceneKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macOS_RxSceneKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94117A75222126A100852B53 /* macOS_RxSceneKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_RxSceneKitTests.swift; sourceTree = "<group>"; };
+		94117A77222126A100852B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94117A91222128FE00852B53 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		94117A92222128FE00852B53 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		94E65AC920DD734F00E49D1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		94E65ACA20DD735000E49D1B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		94E65ACB20DD735000E49D1B /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
@@ -56,26 +84,79 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94E65AAB20DD723200E49D1B /* Frameworks */ = {
+		94117A492221267E00852B53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E65AE220DD745800E49D1B /* RxCocoa.framework in Frameworks */,
-				94E65AE320DD745800E49D1B /* RxSwift.framework in Frameworks */,
+				94117A8F222128E500852B53 /* RxCocoa.framework in Frameworks */,
+				94117A90222128E500852B53 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94E65AB520DD723300E49D1B /* Frameworks */ = {
+		94117A512221267F00852B53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E65AB920DD723300E49D1B /* RxSceneKit.framework in Frameworks */,
+				94117A552221267F00852B53 /* RxSceneKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A65222126A100852B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94117A93222128FF00852B53 /* RxSwift.framework in Frameworks */,
+				94117A94222128FF00852B53 /* RxCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A6D222126A100852B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94117A71222126A100852B53 /* RxSceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94117A4D2221267E00852B53 /* iOS_RxSceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				94117A4E2221267E00852B53 /* iOS_RxSceneKit.h */,
+				94117A4F2221267E00852B53 /* Info.plist */,
+			);
+			path = iOS_RxSceneKit;
+			sourceTree = "<group>";
+		};
+		94117A582221267F00852B53 /* iOS_RxSceneKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				94117A592221267F00852B53 /* iOS_RxSceneKitTests.swift */,
+				94117A5B2221267F00852B53 /* Info.plist */,
+			);
+			path = iOS_RxSceneKitTests;
+			sourceTree = "<group>";
+		};
+		94117A69222126A100852B53 /* macOS_RxSceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				94117A6A222126A100852B53 /* macOS_RxSceneKit.h */,
+				94117A6B222126A100852B53 /* Info.plist */,
+			);
+			path = macOS_RxSceneKit;
+			sourceTree = "<group>";
+		};
+		94117A74222126A100852B53 /* macOS_RxSceneKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				94117A75222126A100852B53 /* macOS_RxSceneKitTests.swift */,
+				94117A77222126A100852B53 /* Info.plist */,
+			);
+			path = macOS_RxSceneKitTests;
+			sourceTree = "<group>";
+		};
 		94E65AA520DD723200E49D1B = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +167,10 @@
 				94F130102184FD2100EC279A /* Proxy */,
 				94F1300F2184FD1400EC279A /* Utility */,
 				94E65AB120DD723200E49D1B /* RxSceneKit */,
-				94E65ABC20DD723300E49D1B /* RxSceneKitTests */,
+				94117A4D2221267E00852B53 /* iOS_RxSceneKit */,
+				94117A582221267F00852B53 /* iOS_RxSceneKitTests */,
+				94117A69222126A100852B53 /* macOS_RxSceneKit */,
+				94117A74222126A100852B53 /* macOS_RxSceneKitTests */,
 				94E65AB020DD723200E49D1B /* Products */,
 				94E65ADF20DD745700E49D1B /* Frameworks */,
 			);
@@ -95,8 +179,10 @@
 		94E65AB020DD723200E49D1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94E65AAF20DD723200E49D1B /* RxSceneKit.framework */,
-				94E65AB820DD723300E49D1B /* RxSceneKitTests.xctest */,
+				94117A4C2221267E00852B53 /* RxSceneKit.framework */,
+				94117A542221267F00852B53 /* iOS_RxSceneKitTests.xctest */,
+				94117A68222126A100852B53 /* RxSceneKit.framework */,
+				94117A70222126A100852B53 /* macOS_RxSceneKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,24 +192,15 @@
 			children = (
 				941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */,
 				94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */,
-				94E65AB220DD723200E49D1B /* RxSceneKit.h */,
-				94E65AB320DD723200E49D1B /* Info.plist */,
 			);
 			path = RxSceneKit;
-			sourceTree = "<group>";
-		};
-		94E65ABC20DD723300E49D1B /* RxSceneKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				94E65ABD20DD723300E49D1B /* RxSceneKitTests.swift */,
-				94E65ABF20DD723300E49D1B /* Info.plist */,
-			);
-			path = RxSceneKitTests;
 			sourceTree = "<group>";
 		};
 		94E65ADF20DD745700E49D1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94117A92222128FE00852B53 /* RxCocoa.framework */,
+				94117A91222128FE00852B53 /* RxSwift.framework */,
 				94E65AE020DD745700E49D1B /* RxCocoa.framework */,
 				94E65AE120DD745800E49D1B /* RxSwift.framework */,
 			);
@@ -153,53 +230,99 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		94E65AAC20DD723200E49D1B /* Headers */ = {
+		94117A472221267E00852B53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E65AC020DD723300E49D1B /* RxSceneKit.h in Headers */,
+				94117A5C2221267F00852B53 /* iOS_RxSceneKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A63222126A100852B53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94117A78222126A100852B53 /* macOS_RxSceneKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		94E65AAE20DD723200E49D1B /* RxSceneKit */ = {
+		94117A4B2221267E00852B53 /* iOS_RxSceneKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E65AC320DD723300E49D1B /* Build configuration list for PBXNativeTarget "RxSceneKit" */;
+			buildConfigurationList = 94117A5D2221267F00852B53 /* Build configuration list for PBXNativeTarget "iOS_RxSceneKit" */;
 			buildPhases = (
-				94E65AAA20DD723200E49D1B /* Sources */,
-				94E65AAB20DD723200E49D1B /* Frameworks */,
-				94E65AAC20DD723200E49D1B /* Headers */,
-				94E65AAD20DD723200E49D1B /* Resources */,
-				94E65AE620DD749C00E49D1B /* Carthage */,
-				94E65AE720DD749E00E49D1B /* Delete Nested Framework(s) */,
+				94117A472221267E00852B53 /* Headers */,
+				94117A482221267E00852B53 /* Sources */,
+				94117A492221267E00852B53 /* Frameworks */,
+				94117A4A2221267E00852B53 /* Resources */,
+				94117A952221290700852B53 /* Carthage */,
+				94117AB522212CEA00852B53 /* Delete Nested Framework(s) */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RxSceneKit;
-			productName = RxSceneKit;
-			productReference = 94E65AAF20DD723200E49D1B /* RxSceneKit.framework */;
+			name = iOS_RxSceneKit;
+			productName = iOS_RxSceneKit;
+			productReference = 94117A4C2221267E00852B53 /* RxSceneKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		94E65AB720DD723300E49D1B /* RxSceneKitTests */ = {
+		94117A532221267F00852B53 /* iOS_RxSceneKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E65AC620DD723300E49D1B /* Build configuration list for PBXNativeTarget "RxSceneKitTests" */;
+			buildConfigurationList = 94117A602221267F00852B53 /* Build configuration list for PBXNativeTarget "iOS_RxSceneKitTests" */;
 			buildPhases = (
-				94E65AB420DD723300E49D1B /* Sources */,
-				94E65AB520DD723300E49D1B /* Frameworks */,
-				94E65AB620DD723300E49D1B /* Resources */,
+				94117A502221267F00852B53 /* Sources */,
+				94117A512221267F00852B53 /* Frameworks */,
+				94117A522221267F00852B53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				94E65ABB20DD723300E49D1B /* PBXTargetDependency */,
+				94117A572221267F00852B53 /* PBXTargetDependency */,
 			);
-			name = RxSceneKitTests;
-			productName = RxSceneKitTests;
-			productReference = 94E65AB820DD723300E49D1B /* RxSceneKitTests.xctest */;
+			name = iOS_RxSceneKitTests;
+			productName = iOS_RxSceneKitTests;
+			productReference = 94117A542221267F00852B53 /* iOS_RxSceneKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94117A67222126A100852B53 /* macOS_RxSceneKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94117A79222126A100852B53 /* Build configuration list for PBXNativeTarget "macOS_RxSceneKit" */;
+			buildPhases = (
+				94117A63222126A100852B53 /* Headers */,
+				94117A64222126A100852B53 /* Sources */,
+				94117A65222126A100852B53 /* Frameworks */,
+				94117A66222126A100852B53 /* Resources */,
+				94117A962221291900852B53 /* Carthage */,
+				94117A99222129EF00852B53 /* Delete Nested Framework(s) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macOS_RxSceneKit;
+			productName = macOS_RxSceneKit;
+			productReference = 94117A68222126A100852B53 /* RxSceneKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94117A6F222126A100852B53 /* macOS_RxSceneKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94117A7C222126A100852B53 /* Build configuration list for PBXNativeTarget "macOS_RxSceneKitTests" */;
+			buildPhases = (
+				94117A6C222126A100852B53 /* Sources */,
+				94117A6D222126A100852B53 /* Frameworks */,
+				94117A6E222126A100852B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94117A73222126A100852B53 /* PBXTargetDependency */,
+			);
+			name = macOS_RxSceneKitTests;
+			productName = macOS_RxSceneKitTests;
+			productReference = 94117A70222126A100852B53 /* macOS_RxSceneKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -208,16 +331,21 @@
 		94E65AA620DD723200E49D1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Maxim Volgin";
 				TargetAttributes = {
-					94E65AAE20DD723200E49D1B = {
-						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 0940;
+					94117A4B2221267E00852B53 = {
+						CreatedOnToolsVersion = 10.1;
 					};
-					94E65AB720DD723300E49D1B = {
-						CreatedOnToolsVersion = 9.4;
+					94117A532221267F00852B53 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					94117A67222126A100852B53 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					94117A6F222126A100852B53 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -233,21 +361,37 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94E65AAE20DD723200E49D1B /* RxSceneKit */,
-				94E65AB720DD723300E49D1B /* RxSceneKitTests */,
+				94117A4B2221267E00852B53 /* iOS_RxSceneKit */,
+				94117A532221267F00852B53 /* iOS_RxSceneKitTests */,
+				94117A67222126A100852B53 /* macOS_RxSceneKit */,
+				94117A6F222126A100852B53 /* macOS_RxSceneKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		94E65AAD20DD723200E49D1B /* Resources */ = {
+		94117A4A2221267E00852B53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94E65AB620DD723300E49D1B /* Resources */ = {
+		94117A522221267F00852B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A66222126A100852B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A6E222126A100852B53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,73 +401,355 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		94E65AE620DD749C00E49D1B /* Carthage */ = {
+		94117A952221290700852B53 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			name = Carthage;
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		94E65AE720DD749E00E49D1B /* Delete Nested Framework(s) */ = {
+		94117A962221291900852B53 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Delete Nested Framework(s)";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\n    rm -fr Frameworks\nfi";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		94117A99222129EF00852B53 /* Delete Nested Framework(s) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Delete Nested Framework(s)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi\n";
+		};
+		94117AB522212CEA00852B53 /* Delete Nested Framework(s) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Delete Nested Framework(s)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94E65AAA20DD723200E49D1B /* Sources */ = {
+		94117A482221267E00852B53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */,
-				941179F622211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */,
-				94F130172184FEC000EC279A /* Helper.swift in Sources */,
-				94F1301A2184FEC000EC279A /* Mapper.swift in Sources */,
-				94F130162184FEC000EC279A /* Selector.swift in Sources */,
-				94F130192184FEC000EC279A /* Event.swift in Sources */,
-				94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */,
-				941179F822211EA200852B53 /* SCNPhysicsWorld+Rx.swift in Sources */,
+				94117A8D2221273500852B53 /* SCNPhysicsWorld+Rx.swift in Sources */,
+				94117A872221273500852B53 /* RxSCNSceneRendererDelegateProxy.swift in Sources */,
+				94117A892221273500852B53 /* Event.swift in Sources */,
+				94117A8C2221273500852B53 /* Selector.swift in Sources */,
+				94117A882221273500852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */,
+				94117A8A2221273500852B53 /* Helper.swift in Sources */,
+				94117A8B2221273500852B53 /* Mapper.swift in Sources */,
+				94117A8E2221273500852B53 /* SCNView+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94E65AB420DD723300E49D1B /* Sources */ = {
+		94117A502221267F00852B53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E65ABE20DD723300E49D1B /* RxSceneKitTests.swift in Sources */,
+				94117A5A2221267F00852B53 /* iOS_RxSceneKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A64222126A100852B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94117A852221273100852B53 /* SCNPhysicsWorld+Rx.swift in Sources */,
+				94117A7F2221273100852B53 /* RxSCNSceneRendererDelegateProxy.swift in Sources */,
+				94117A812221273100852B53 /* Event.swift in Sources */,
+				94117A842221273100852B53 /* Selector.swift in Sources */,
+				94117A802221273100852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */,
+				94117A822221273100852B53 /* Helper.swift in Sources */,
+				94117A832221273100852B53 /* Mapper.swift in Sources */,
+				94117A862221273100852B53 /* SCNView+Rx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94117A6C222126A100852B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94117A76222126A100852B53 /* macOS_RxSceneKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		94E65ABB20DD723300E49D1B /* PBXTargetDependency */ = {
+		94117A572221267F00852B53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94E65AAE20DD723200E49D1B /* RxSceneKit */;
-			targetProxy = 94E65ABA20DD723300E49D1B /* PBXContainerItemProxy */;
+			target = 94117A4B2221267E00852B53 /* iOS_RxSceneKit */;
+			targetProxy = 94117A562221267F00852B53 /* PBXContainerItemProxy */;
+		};
+		94117A73222126A100852B53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94117A67222126A100852B53 /* macOS_RxSceneKit */;
+			targetProxy = 94117A72222126A100852B53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		94117A5E2221267F00852B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iOS_RxSceneKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.iOS-RxSceneKit";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94117A5F2221267F00852B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iOS_RxSceneKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.iOS-RxSceneKit";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94117A612221267F00852B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOS_RxSceneKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.iOS-RxSceneKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94117A622221267F00852B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOS_RxSceneKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.iOS-RxSceneKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94117A7A222126A100852B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = macOS_RxSceneKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.macOS-RxSceneKit";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		94117A7B222126A100852B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = macOS_RxSceneKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.macOS-RxSceneKit";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		94117A7D222126A100852B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = macOS_RxSceneKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.macOS-RxSceneKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		94117A7E222126A100852B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = macOS_RxSceneKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "maxvol.macOS-RxSceneKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		94E65AC120DD723300E49D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +803,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -434,6 +861,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -444,127 +872,50 @@
 			};
 			name = Release;
 		};
-		94E65AC420DD723300E49D1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = RxSceneKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxSceneKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		94E65AC520DD723300E49D1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = RxSceneKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxSceneKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		94E65AC720DD723300E49D1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSceneKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxSceneKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		94E65AC820DD723300E49D1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSceneKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxSceneKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		94117A5D2221267F00852B53 /* Build configuration list for PBXNativeTarget "iOS_RxSceneKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94117A5E2221267F00852B53 /* Debug */,
+				94117A5F2221267F00852B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94117A602221267F00852B53 /* Build configuration list for PBXNativeTarget "iOS_RxSceneKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94117A612221267F00852B53 /* Debug */,
+				94117A622221267F00852B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94117A79222126A100852B53 /* Build configuration list for PBXNativeTarget "macOS_RxSceneKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94117A7A222126A100852B53 /* Debug */,
+				94117A7B222126A100852B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94117A7C222126A100852B53 /* Build configuration list for PBXNativeTarget "macOS_RxSceneKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94117A7D222126A100852B53 /* Debug */,
+				94117A7E222126A100852B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		94E65AA920DD723200E49D1B /* Build configuration list for PBXProject "RxSceneKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94E65AC120DD723300E49D1B /* Debug */,
 				94E65AC220DD723300E49D1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94E65AC320DD723300E49D1B /* Build configuration list for PBXNativeTarget "RxSceneKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94E65AC420DD723300E49D1B /* Debug */,
-				94E65AC520DD723300E49D1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94E65AC620DD723300E49D1B /* Build configuration list for PBXNativeTarget "RxSceneKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94E65AC720DD723300E49D1B /* Debug */,
-				94E65AC820DD723300E49D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
