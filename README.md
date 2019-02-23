@@ -19,19 +19,19 @@ scnView.
     }
     .disposed(by: disposeBag)
     
-    physicsWorld
-        .rx
-        .didBeginContact
-        .subscribe { event in
-            switch event {
-            case .next(let didBeginContact):
-                // TODO: ...
-                break
-            default:
-                break
-            }
+physicsWorld
+    .rx
+    .didBeginContact
+    .subscribe { event in
+        switch event {
+        case .next(let didBeginContact):
+            // TODO: ...
+            break
+        default:
+            break
         }
-        .disposed(by: disposeBag)
+    }
+    .disposed(by: disposeBag)
 ```
 
 Carthage setup.
