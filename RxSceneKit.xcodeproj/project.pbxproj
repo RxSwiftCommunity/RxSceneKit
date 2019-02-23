@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941179F622211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */; };
+		941179F822211EA200852B53 /* SCNPhysicsWorld+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */; };
 		94E65AB920DD723300E49D1B /* RxSceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E65AAF20DD723200E49D1B /* RxSceneKit.framework */; };
 		94E65ABE20DD723300E49D1B /* RxSceneKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65ABD20DD723300E49D1B /* RxSceneKitTests.swift */; };
 		94E65AC020DD723300E49D1B /* RxSceneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E65AB220DD723200E49D1B /* RxSceneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSCNPhysicsContactDelegateProxy.swift; sourceTree = "<group>"; };
+		941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsWorld+Rx.swift"; sourceTree = "<group>"; };
 		94E65AAF20DD723200E49D1B /* RxSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E65AB220DD723200E49D1B /* RxSceneKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSceneKit.h; sourceTree = "<group>"; };
 		94E65AB320DD723200E49D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		94E65AB120DD723200E49D1B /* RxSceneKit */ = {
 			isa = PBXGroup;
 			children = (
+				941179F722211EA200852B53 /* SCNPhysicsWorld+Rx.swift */,
 				94E65B0B20DE696800E49D1B /* SCNView+Rx.swift */,
 				94E65AB220DD723200E49D1B /* RxSceneKit.h */,
 				94E65AB320DD723200E49D1B /* Info.plist */,
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				94E65B0920DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift */,
+				941179F522211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
@@ -289,11 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E65B0A20DE692700E49D1B /* RxSCNSceneRendererDelegateProxy.swift in Sources */,
+				941179F622211D0500852B53 /* RxSCNPhysicsContactDelegateProxy.swift in Sources */,
 				94F130172184FEC000EC279A /* Helper.swift in Sources */,
 				94F1301A2184FEC000EC279A /* Mapper.swift in Sources */,
 				94F130162184FEC000EC279A /* Selector.swift in Sources */,
 				94F130192184FEC000EC279A /* Event.swift in Sources */,
 				94E65B0C20DE696800E49D1B /* SCNView+Rx.swift in Sources */,
+				941179F822211EA200852B53 /* SCNPhysicsWorld+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

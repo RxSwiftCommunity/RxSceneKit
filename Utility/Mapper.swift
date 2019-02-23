@@ -26,3 +26,10 @@ func toEventRender(_ args: [Any]) throws -> EventRender {
     let time = try castOrThrow(TimeInterval.self, args[2])
     return (renderer, scene, time)
 }
+
+//MARK: - SCNPhysicsContactDelegate
+
+func toSCNPhysicsContact(_ args: [Any]) throws -> SCNPhysicsContact {
+    let contact = try castOrThrow(SCNPhysicsContact.self, args[0])
+    return contact
+}

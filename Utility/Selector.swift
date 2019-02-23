@@ -18,3 +18,11 @@ extension Selector {
     static let willRenderSceneAtTime = #selector(SCNSceneRendererDelegate.renderer(_:willRenderScene:atTime:))
     static let didRenderSceneAtTime = #selector(SCNSceneRendererDelegate.renderer(_:didRenderScene:atTime:))
 }
+
+//MARK: - SCNPhysicsContactDelegate
+
+extension Selector {
+    static let didBeginContact = #selector(SCNPhysicsContactDelegate.physicsWorld(_:didBegin:))
+    static let didUpdateContact = #selector(SCNPhysicsContactDelegate.physicsWorld(_:didUpdate:))
+    static let didEndContact = #selector(SCNPhysicsContactDelegate.physicsWorld(_:didEnd:))
+}

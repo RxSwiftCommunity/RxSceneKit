@@ -18,12 +18,26 @@ scnView.
         }
     }
     .disposed(by: disposeBag)
+    
+    physicsWorld
+        .rx
+        .didBeginContact
+        .subscribe { event in
+            switch event {
+            case .next(let didBeginContact):
+                // TODO: ...
+                break
+            default:
+                break
+            }
+        }
+        .disposed(by: disposeBag)
 ```
 
 Carthage setup.
 
 ```
-github "maxvol/RxSceneKit" ~> 0.0.2
+github "maxvol/RxSceneKit" ~> 0.1.0
 
 ```
 
