@@ -3,7 +3,7 @@
 //  iOS_RxSceneKitTests
 //
 //  Created by Maxim Volgin on 23/02/2019.
-//  Copyright © 2019 Maxim Volgin. All rights reserved.
+//  Copyright (c) RxSwiftCommunity All rights reserved.
 //
 
 import XCTest
